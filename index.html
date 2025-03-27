@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolioo - Sujith</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .section-content {
+            background: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-content h2 {
+            text-align: center;
+        }
+
+        .section-content ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .download-button {
+            display: block;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .download-button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="https://drive.google.com/file/d/10IqYMaVP5mfe1oIzAAoMPo52ixh4ILzk/view?usp=drivesdk.jpg".jpg" alt="Profile Picture" class="profile-picture">
+        <h1>Sujith</h1>
+        <p>Computer Science Student | Software Developer</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+</nav>
+
+<section id="about" class="section-content">
+    <h2>About Me</h2>
+    <p>I am a passionate computer science student with a strong interest in software development, data structures, and algorithms. 
+       Proficient in Python, Java, C++, and excited about learning new technologies.</p>
+</section>
+
+<section id="education" class="section-content">
+    <h2>Education</h2>
+    <p>the Government higher secondary school</p>
+    <p>CSI Bishop Appasamy College of Arts and Sciences</p>
+</section>
+
+<section id="skills" class="section-content">
+    <h2>Skills</h2>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Spring</li>
+        <li>ML & AI</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
+
+<section id="projects" class="section-content">
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="#">E-Cart Website</a></li>
+        <li><a href="#">Cloud Security (IBM)</a></li>
+        <li><a href="#">IBM Chatbot</a></li>
+        <li><a href="#">College Portal</a></li>
+    </ul>
+</section>
+
+<section id="resume" class="section-content">
+    <h2>Resume</h2>
+    <a href="https://drive.google.com/file/d/1029-X3AU-W_8PpNZaCUyN-_9s1DwZf43/view?usp=drivesdk.pdf" class="download-button" target="_blank">Download CV</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 Sujith</p>
+</footer>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
